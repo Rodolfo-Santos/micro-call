@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de Atendimento - Microcamp SJC</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/base/animate.css" rel="stylesheet">
+	<link rel="icon" type="image/ico" href="\img\favicon.png">
+</head>
+
+<body class="bg-color1">
+
+	<main class="container bloco_conteudo">
+
+		<div id="form_login" class="form_login">
+			<h1 class="text-white animated fadeInDown">Micro<span class="text-color2">Call</span></h1>
+			<p class="text-muted animated fadeInUp">Sistema de Atendimento Interno para ser usado pelos setores de Coordenação, Financeiro
+				e Recepção</p>
+			<form role="form" name="form1" id="login-form" action="php/login.php" method="post">
+				<div class="form-group d-flex align-items-end animated fadeInLeft delay-05s">
+					<img src="img/icons/user.svg" class="icon mr-2">
+					<input type="text" class="form-control input-login" id="user" placeholder="Usuário" name="user">
+				</div>
+				<div class="form-group d-flex animated fadeInLeft delay-07s">
+					<img src="img/icons/key.svg" class="icon mr-2">
+					<input type="password" class="form-control input-login" id="pwd" placeholder="Senha"
+						name="password">
+				</div>
+				<div class="my-4 d-flex justify-content-between align-items-start">
+					<a href="#" class="text-muted text-decoration animated fadeInUp delay-07s" onClick="alert('Fale com a Cordenação da Unidade')"> Esqueci o usuario ou senha</a>
+					<button class="btn btn-large btn-color2 animated fadeInDown delay-05s" id="btn-login">Entrar</button>
+				</div>
+			</form>
+		</div>
+
+		<img src="img/fundo01.svg" alt="" class="img-fundo animated fadeIn delay-1s">
+
+	</main>
+
+	<footer class="d-flex text-muted w-100 d-flex justify-content-center animated fadeIn delay-2s">
+		<p> Microcamp São José dos Campos - Desenvolvido por <a href="https://rodolfo-santos.github.io/" target="_blank" class="text-muted"> Rodolfo Santos </a> © </p>
+	</footer>
+
+	<!--SCRIPTS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/submit.js"></script>
+	<!--FIM SCRIPTS-->
+</body>
+
+</html>

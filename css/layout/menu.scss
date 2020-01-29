@@ -1,0 +1,11 @@
+.btn-menu {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: darken($cor-secundaria, 10%);  
+      color: #fff;
+    }
+}

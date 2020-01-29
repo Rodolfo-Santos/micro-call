@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    // Solicita a permissão para realizar as notificações
+    document.addEventListener('DOMContentLoaded', function () {
+      if (Notification.permission !== "granted")
+        Notification.requestPermission();
+    });
+    // Função para exibir as notificações
+    function NofiticacaoGoogleChrome() {
+      if (!Notification) {
+        alert(
+          'Notificações de área de trabalho que não estão disponíveis no seu navegador. Tente com o navegador Google Chrome'
+          );
+        return;
+      }
+
+      if (Notification.permission !== "granted")
+        Notification.requestPermission();
+      else {
+        var notification = new Notification('Titulo da Notificação - Nome do Site', {
+          icon: 'https://cdn3.iconfinder.com/data/icons/ose/Warning.png',
+          body: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos.",
+        });
+
+        notification.onclick = function () {
+          window.open("http://site.com.br/pagina.html");
+        };
+
+      }
+
+    }
+  </script>
+
+</head>
+</body>
+
+<script type="text/javascript">
+  window.onload = function () {
+    NofiticacaoGoogleChrome();
+  }
+</script>
+</body>
+
+</html>

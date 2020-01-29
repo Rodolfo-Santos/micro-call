@@ -1,0 +1,102 @@
+.remove-todos {
+    width: 100%;
+    max-width: 800px;
+
+    a {
+        transition: .25s;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: rgba(199, 93, 98, 0.867)!important;
+    }
+}
+
+.box-lista {
+    width: 100%;
+    max-width: 800px;
+    min-height: 350px;
+    margin: auto;
+    background-color: $cor-auxiliar;
+    color: $cor-principal;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.01) !important;
+        box-shadow: 10px 10px 15px 0px #000;
+        z-index: 1;
+    }
+
+    h3 {
+        max-width: 400px !important;
+        color: $cor-secundaria;
+        font-size: 2.5em;
+    }
+
+    .data {
+        font-size: 1em;
+    }
+
+    .hora {
+        font-size: 1.8em;
+    }
+
+    .obs {
+        width: 100%;
+        max-width: 450px;
+        min-height: 150px;
+    }
+
+    .linha {
+        display: block;
+        content: '';
+        border: solid 1px #ccc;
+    }
+
+    .btn-remove {
+        cursor: pointer;
+        color: red;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+.info {
+    height: 15%;
+}
+
+.lista-atendimento {
+    padding: 0px;
+    
+    li {
+        list-style-type: none;
+    }
+}
+
+.titulo-lista {
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+
+.coord-card {
+    border-left: solid 10px #730a6e !important;
+  }
+
+  .financeiro-card {
+    border-left: solid 10px #eda600 !important;
+  }
+
+  .recepcao-card {
+    border-left: solid 10px #cef700 !important;
+  }
+
+
+

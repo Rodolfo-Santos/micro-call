@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-color1 {
+    background-color: $cor-principal;
+}
+
+.bg-color2 {
+    background-color: $cor-secundaria;
+}
+
+.bg-darkwhite {
+    background-color: #eee;
+}
+
+.text-color1 {
+    color: $cor-principal;
+}
+
+.text-color2 {
+    color: $cor-secundaria;
+}
+
+.btn-color2 {
+    background-color: $cor-secundaria;
+    color: $cor-auxiliar;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.btn-large {
+    width: 150px;
+
+    &:hover {
+        color: $cor-auxiliar;
+        background-color: darken( $cor-secundaria, 10% )
+        ;
+    }
+}
+
+.navbar {
+    z-index: 10;
+}
